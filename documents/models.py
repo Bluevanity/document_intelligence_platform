@@ -8,7 +8,7 @@ class Document(models.Model):
     upload_date=models.DateTimeField(auto_now_add=True)
     status=models.CharField(
         max_length=225,
-        choices=[("pending", "POending"), ("processing", "Processing"), ("successful", "Successful")]
+        choices=[("pending", "Pending"), ("processing", "Processing"), ("successful", "Successful")]
     )
 
 class ExtractedField(models.Model):
